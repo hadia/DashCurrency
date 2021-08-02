@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_8"
+        android:layout_marginVertical="@dimen/spacing_20"
+        android:background="@color/white"
+        tools:context=".ui.basecurrency.BaseCurrencyFragment">
+
+        <TextView
+            android:id="@+id/currency_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Base_Currency"
+            android:textSize="@dimen/text_14"
+            app:layout_constraintBottom_toBottomOf="@id/change_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/change_btn" />
+
+        <TextView
+            android:id="@+id/currency_value_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_4"
+            android:textSize="@dimen/text_14"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/change_btn"
+            app:layout_constraintBottom_toBottomOf="@id/change_btn"
+            app:layout_constraintStart_toEndOf="@+id/currency_title_tv"
+            app:layout_constraintTop_toTopOf="@id/change_btn"
+            tools:text="@string/Base_Currency" />
+
+        <Button
+            android:id="@+id/change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change"
+            android:textSize="@dimen/text_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
