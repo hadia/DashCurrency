@@ -8,10 +8,13 @@
     android:layout_height="wrap_content"
     tools:context=".ui.exchangerates.ExchangeRatesFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exchange_rate_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/Base_Currency" />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:listitem="@layout/item_exchange_rate"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

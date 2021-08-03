@@ -7,8 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:padding="@dimen/spacing_12"
-        tools:context=".ui.basecurrency.BaseCurrencyFragment">
+        android:padding="@dimen/spacing_12">
 
         <TextView
             android:id="@+id/currency_title_tv"
