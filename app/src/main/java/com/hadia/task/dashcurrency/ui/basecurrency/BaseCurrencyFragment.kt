@@ -28,7 +28,7 @@ class BaseCurrencyFragment : BaseBindingFragment<FragmentBaseCurrencyBinding>() 
 
     private fun showAlertDialog() {
         val alertDialog = AlertDialog.Builder(requireContext()).apply {
-            setTitle("Base Currency")
+            setTitle(getString(R.string.base_currency))
             val cryptoCurrenciesList = CryptoCurrencies.values().toList()
             setAdapter(
                 CurrencyListAdapter(requireContext(), cryptoCurrenciesList)

@@ -4,4 +4,5 @@
     <string name="Base_Currency">Base Currency: </string>
     <string name="change">Change</string>
     <string name="empty_state_view_error_title">Something went wrong!</string>
+    <string name="base_currency">Base Currency</string>
 </resources>
