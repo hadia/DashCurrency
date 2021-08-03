@@ -6,11 +6,11 @@ import com.hadia.task.dashcurrency.utils.ErrorViewState
 import com.hadia.task.dashcurrency.utils.SingleLiveEvent
 
 open class BaseViewModel : ViewModel() {
-    val _loadingState: SingleLiveEvent<Boolean> = SingleLiveEvent()
+    private val _loadingState: SingleLiveEvent<Boolean> = SingleLiveEvent()
     val loadingState: LiveData<Boolean>
         get() = _loadingState
 
-    val _errorViewState: SingleLiveEvent<ErrorViewState> = SingleLiveEvent()
+    private val _errorViewState: SingleLiveEvent<ErrorViewState> = SingleLiveEvent()
     val errorViewState: LiveData<ErrorViewState>
         get() = _errorViewState
 
