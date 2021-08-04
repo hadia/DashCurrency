@@ -12,5 +12,5 @@ data class ExchangeRatesData(
     @SerializedName("currency")
     val currency: String,
     @SerializedName("rates")
-    val rates: ArrayMap<String, String>
+    val rates: androidx.collection.ArrayMap<String, String>
 )
